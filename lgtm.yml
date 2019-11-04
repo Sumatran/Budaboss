@@ -2,6 +2,8 @@ extraction:
   python:
     prepare: 
       packages: libpng-dev
+    after_prepare:
+      - git --git-dir=/work/working/private/src/.git remote add origin -- https://github.com/Sumatran/Kanaka.git
     python_setup: 
       version: 3
       requirements_files: 
